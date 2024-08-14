@@ -269,44 +269,52 @@ img{
     width: 200px;
     border-radius: .5rem;
 }
-
-/*SKills*/
-.skillContainer{
+/*About*/
+.aboutContainer{
     row-gap: 2rem;
     text-align: center;
 }
 
-.skillSubtitle{
+.aboutSubtitle{
     margin-bottom: var(--margin-2);
 }
 
-.skillData{
+.aboutImg{
+    justify-self: center;
+}
+
+.aboutImg img{
+    width: 200px;
+    border-radius: .5rem;
+}
+
+/*Experience*/
+.experienceContainer{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
-    font-weight: var(--font-semi);
-    padding: 0.5rem 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
-    color: var(--main-color);
+    gap: 2rem;
+    text-align: left;
 }
 
-.skillIcon{
-    font-size: 2rem;
-    margin-right: var(--margin-2);
-    color: var(--main-color);
+.experienceSubtitle{
+    margin-bottom: var(--margin-2);
+    flex-grow: 1;
 }
 
-.skillName{
-    display: flex;
-    align-items: center;
+.experienceImg{
+    flex-shrink: 0;
+    order: 2;
 }
 
-.skillImg{
-    border-radius: 0.5rem;
+.experienceImg img{
+    width: 500px;
+    min-width: 500px; /* Menetapkan lebar minimum untuk gambar */
+    border-radius: .5rem;
+    height: auto;
 }
+
+
 
 /* Project */
 .projectContainer{
